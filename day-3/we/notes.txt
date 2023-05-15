@@ -1,0 +1,20 @@
+npm i -g @angular/cli
+ng new <FIleName>
+cd <FileName>
+ng serve
+
+
+- Declarations is a list of all components, pipes and directives that we can use in our applications.
+- Imports is all modules we are using in our application.
+- Providers is a list of services that are injected to our applications.
+- bootstrap is a list of main components of your applications
+
+
+--------------------------------------------------
+
+ng new steps
+cd steps
+ng serve || ng serve -o || ng server --open
+
+ng generate application step1-binding --routing=false --style=css   // With this command we are creating a new project inside the already created project with the same environments.
+ng serve step1-binding || ng serve --project=step1-binding

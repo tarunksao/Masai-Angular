@@ -1,0 +1,3 @@
+Go to Bootstrap Website -> Go to examples -> Open Album Template
+
+Convert the template to an Angular Project.

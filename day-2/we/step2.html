@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let conman = {
+            title:'Bruce',
+        };
+        let addPower = function (power) {
+            return function (hero) {
+                return {
+                    title: hero.title,
+                    power:power,
+                }
+            }
+        };
+
+/*        let tempConman = addPower(7);
+        conman = tempConman(conman); */
+
+        conman = addPower(7)(conman);
+        console.log(conman);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

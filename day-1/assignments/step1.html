@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1() {
+            document.getElementsByTagName('h1')[0].innerText = 'This is Function 1';
+        }
+        function fun2() {
+            document.getElementsByTagName('h1')[0].innerText = 'This is Function 2';
+        }
+        function fun3() {
+            document.getElementsByTagName('h1')[0].innerText = 'This is Function 3';
+        }
+
+        window.addEventListener('load', fun2);
+        window.removeEventListener('load', fun2);
+
+        document.addEventListener('DOMContentLoaded', fun3);
+
+    </script>
+</head>
+<body onload="fun1()">
+    <h1></h1>
+    <!-- <h1></h1>
+    <h1></h1> -->
+</body>
+</html>
