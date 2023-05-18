@@ -1,0 +1,2 @@
+ng g ng g c navbar --project=step2-service -t -s --skip-tests=true --flat
+ng g c grid --project=step2-service -t -s --skip-tests=true --flat
